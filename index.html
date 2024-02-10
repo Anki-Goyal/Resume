@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/73d9a7c149.js"crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <style>
+        .notes{
+            font-size: 25px;
+        }
+        body{
+            margin: 0px;
+            height: 5000px;
+        }
+        .notes1{
+            background-color:rgb(0, 229, 255);
+        }
+
+        .hei1{
+            height:40px;
+            text-align: center;
+            padding: 5px;
+            position:fixed;
+            top:0px;
+            z-index: 1;
+            background-color: aqua;
+
+        }
+        .hei{
+            height:700px; }
+        .hei2{
+            margin-top: 300px;
+            margin-bottom: 100px;
+        }
+        .notes2{
+            margin-left:350px;}
+        .notes3{
+            margin-left:255px;
+            color: white;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .notes4{
+            margin-left: 120px;
+        }
+        .notes5{
+            color: white;
+            font-size: 15px;
+        }
+        .notes6{
+            font-size:30px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .data1{
+            color:red;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .data2{
+            color:green;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .data3{
+            color:pink;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .data4{
+            color:blue;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .data5{
+            color:blueviolet;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .name{
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .name1{
+            margin-top: 50px;
+            
+        }
+        .name2{
+            font-size: 20px;
+        }
+        .name3{
+          margin-top:50px;
+          color:white; 
+          font-size: 20px; 
+          text-align: center;
+          height:50px;
+          padding-top:8px;
+        }
+        .name4{
+            margin-top:50px;
+            font-size:30px;
+            font-weight:bolder;
+            text-align: center;
+            height:700px;
+            color:white;
+        }
+        .name6{
+            height:100px;
+        }
+        .fa-data{
+            width:70px;
+            height:70px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            padding-top:9px;
+        }
+         .notes{
+        font-size:17px;
+        color:white;
+    }
+    .file1{
+
+        width:23%;
+        height:200px;
+        color:aqua;
+        margin-left:8%;
+        font-size:20px;
+        float:left;
+        margin-top:-650px;
+        text-align: center;
+    }     
+    .file2{
+        width:23%;
+        height:200px;
+        color:aqua;
+        margin-left:8%;
+        font-size:20px;
+        float:left;
+        margin-top:-400px;
+        text-align: center;
+    }
+    .notes61{
+        width:8%;
+        height:50px;
+        text-align:center;
+        font-size:15px;
+        color:lightblack;
+        float:left;
+        margin-left:25%;
+    }
+    .notes7{
+        width:10%;
+        height:50px;
+        text-align:center;
+        font-size:15px;
+        color:lightblack;
+        margin-left:1%;
+        float:left;
+    }
+    .fix{clear: both;}
+   .notes8{
+        position: relative;
+        width:19%;
+        height:250px;
+        margin-left:10%;
+        float:left;
+        overflow:hidden;
+        transition: 0.3s;
+       }
+   .child1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    display: none;
+    background-color: rgba(0, 0, 1, 0.4);
+    color: white;
+    text-align: center;
+    line-height:  15;
+    transition: 0.3s;
+   }
+   .child1 i{
+    padding: 25px;
+    background-color: cyan;
+    border-radius: 50%;
+    color: black;
+   }
+   img1{
+    transform: scale(1);
+    transition-duration: 1s;
+    }
+   .notes8:hover .img1{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes8:hover .child1{
+    display: block;
+   }
+  .notes9{
+    width:19%;
+        height:250px;
+        margin-left:2%;
+       float:left;
+       overflow: hidden;
+       position: relative;
+      }
+      img2{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes9:hover .img2{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes9:hover .child1{
+    display: block;
+   }
+   .notes10{
+    width:19%;
+        height:250px;
+        margin-left:2%;
+       float:left;
+       overflow: hidden;
+       position: relative;
+      }
+      img3{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes10:hover .img3{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes10:hover .child1{
+    display: block;
+   }
+   .notes11{
+    width:19%;
+        height:250px;
+        margin-left:2%;
+       float:left;
+       overflow: hidden;
+       position: relative;
+   }
+   img4{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes11:hover .img4{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes11:hover .child1{
+    display: block;
+   }
+   .notes12{
+    position: relative;
+    width:19%;
+        height:250px;
+        margin-left:10%;
+       float:left;
+       margin-top:35px;
+       overflow: hidden;
+   }
+   img5{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes12:hover .img5{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes12:hover .child1{
+    display: block;
+   }
+   .notes13{
+    width:19%;
+        height:250px;
+        margin-left:2%;
+       float:left;
+       margin-top:35px;
+       overflow: hidden;
+       position: relative;
+   }
+   img6{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes13:hover .img6{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes13:hover .child1{
+    display: block;
+   }
+   .notes14{
+    width:19%;
+        height:250px;
+        margin-left:2%;
+        margin-top:35px;
+       float:left;
+       overflow: hidden;
+       position: relative;
+   }
+   img7{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes14:hover .img7{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes14:hover .child1{
+    display: block;
+   }
+   .notes15{
+    width:19%;
+        height:250px;
+        margin-left:2%;
+        margin-top:35px;
+       float:left;
+       overflow: hidden;
+       position: relative;
+   }
+   img8{
+    transform: scale(1);
+    transition-duration: 1s;
+   }
+   .notes15:hover .img8{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   }
+   .notes15:hover .child1{
+    display: block;
+   }
+   .fix{clear:both;}
+
+.left-box{
+    width:58%;
+    height:250px;
+    background-color: brown;
+    margin-top: 50px;
+    margin-left:2%;
+    float:left;
+    background-image: url("download10.jpg");
+    background-position: center;
+background-size: 100% 100%;}
+
+
+.notes16{
+    width:33%;
+    height:250px;
+    text-align:center;
+    font-size: 25px;
+    color:white;
+    margin-top: 75px;
+    float:left;
+}
+.right-box{
+    width:38%;
+    height:250px;
+    background-color:chocolate;
+    margin-top: 50px;
+    margin-right:2%;
+    float:right;
+    background-image: url("download9.jpg");
+    background-position: center;
+background-size: 100% 100%;}
+
+.notes17{
+    text-align:center;
+    font-size: 40px;
+    margin-top: 70px;
+    font-family: Bebas+Neue;
+}
+.notes18{
+    text-align:center;
+    font-size: 35px;
+    margin-top: 40px;
+    font-family: Bebas+Neue;
+}
+.list-group-item{
+    color:blue;
+    font-size: 20px;
+}
+#hide{
+    margin-left: 550px;
+}
+#notes19{
+    display:none;
+}
+#hide1{
+    margin-left:633px;
+}
+#notes20{
+    display:none;
+}
+#hide2{
+    margin-left:562px;
+}
+#notes21{
+    display:none;
+}
+
+.title{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.notes19{
+    font-size: 20px;
+}
+.da1{
+    height: auto;
+    margin: -0px;
+    display: none;
+    border: 1px solid black;
+}
+.title1{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.da2{
+    height: auto;
+    margin: -0px;
+    display: none;
+    border: 1px solid black;
+}.title2{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.da3{
+    height: auto;
+    margin: -0px;
+    display: none;
+    border: 1px solid black;
+}
+ .data6{
+    margin-left:500px;
+ }
+ .data7{
+    margin-left :580px;
+ }
+ .data8{
+    margin-left:520px;
+ }
+ .notes22{
+    text-align:center;
+    font-size: 35px;
+    margin-top: 70px;
+    font-family: Bebas+Neue;
+ }
+ .notes23{
+    border: 1px solid cyan;
+    padding: 15px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 25px;
+    height:120px;
+    background-color: cyan;
+    color:white;
+    text-align: center;
+}
+.notes24{
+    border: 1px solid cyan;
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    height:170px;
+    line-height:2; 
+}
+.notes25{
+         margin-top: 80px;
+         width:100%;
+         height:400px;
+         background-image: url("download11.jpg");
+         background-size: 100% 100%;
+         background-attachment: fixed;
+         position: relative;
+         overflow: hidden;
+      }
+      .child2{
+         width:100%;
+         height:100%;
+         background-color: rgba(0,0,1,0.3);
+         color: white;
+         text-align: center;
+         font-size: 50px;
+         padding-top:40px;
+      }
+     .child3{
+        width:130px;
+        height:130px;
+        border-radius: 50%;
+        border:10px solid white;
+        top:150px;
+        left: 100px;
+        position: absolute;
+        color:white;
+        font-size:35px;
+        text-align: center;
+        padding-top: 25px;
+     }
+     .notes26{
+        border-right: 10px solid yellow;
+
+        left: 100px;
+     }
+     .notes28{
+        border: 10px solid red;
+        border-left: 10px solid white;
+        left: 400px;
+     }
+     .notes30{
+        left: 700px;
+     }
+     .notes32{
+        left: 1000px;
+     }
+     .child4{
+        width:20%;
+        height:auto;
+        color:white;
+        font-size:15px;
+        position: absolute;
+        top:300px;
+     }
+     .notes27{
+     left:100px;
+    }
+    .notes29{
+     left:450px;
+    }
+    .notes31{
+     left:730px;
+    }
+    .notes33{
+     left:1020px;
+    }
+    .notes34{
+    color:black;
+    font-size:40px;
+    text-align: center;
+    margin-top: 100px;
+} 
+.fix{clear:both;}
+.notes35{
+    width:20%;
+    height:50px;
+    font-size:20px;
+    margin-left:10%;
+    margin-top: 0px;
+    float:left;
+    }
+    .notes36{
+        width:20%;
+    height:50px;
+    font-size:20px;
+    margin-left:1%;
+    margin-top:0px;
+    float:left;
+    }
+     fix{clear:both;}
+
+    .notes37{
+    width:60%;
+    height:40px;
+    font-size:20px;
+    margin-left:10%;
+    margin-top:5px;
+    float:left;
+    }
+    .notes38{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 210px;
+    }
+    fix{clear:both;}
+    .notes39{
+        width:90%;
+        height:150px;
+        margin-left: 5%;
+        margin-top:60px;
+    }
+    .notes40{
+        width:91%;
+        height:120px;
+        background-color: grey;
+        font-size: 15px;
+        margin-top: 160px;
+        margin-left:5%;
+    
+    }
+    .notes41{
+        font-size: 15px;
+        padding-top:25px;
+        padding-left: 13%;  
+        float:left;
+    }
+    .notes42{
+        width:100%;
+        height:200px;
+        margin-top:70px;
+        background-color:black;
+    }
+    .notes43{
+        text-align: center;
+        color:white;
+        margin-top:-20px ;
+        padding-top: 20px;
+        font-size:35px; 
+    }
+    .notes44{
+        text-align: center;
+        color:white;
+        margin-top:30px;
+        font-size:15px;
+        float: left;
+        margin-left:600px;
+    }
+    .notes46{
+        text-align: center;
+        color:white;
+        margin-top:30px;
+        font-size:15px;
+        float: left;
+        margin-left: 10px;
+    }
+    .notes45{
+    text-align: center;
+    margin-top: -50px;
+    }
+  input[type="text"]{
+    height: 40px;
+    width:100%;
+  }
+  [type="email"]{
+    height:40px;
+    width:100%;
+  }
+  [type="number"]{
+    height:40px;
+    width:100%;
+  }
+  [type="submit"]{
+    background-color: aqua;
+  }
+      </style>
+    <body>
+        <div class="notes1">
+        <div class="container-fluid hei1 bg-info">
+        <div class="row">
+        <div class="col-md-2 notes text-light">MY DATA</div>
+        <div class="col-md-3 text-light"></div>
+        <div class="col-md-1 text-light">Home</div>
+        <div class="col-md-1 text-light">About</div>
+        <div class="col-md-1 text-light">Services</div>
+        <div class="col-md-1 text-light">Portfolio</div>
+        <div class="col-md-1 text-light">Dropdown</div>
+        <div class="col-md-1 text-light">Skills</div>
+        <div class="col-md-1 text-light">Contact</div></div></div>
+    
+        <div class="container-fluid">
+            <div class="row hei">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 my"><img src="Untitled-2.png"  width="100%" height="100%"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 hei2">
+                <h3 class="notes2">Hi, My name is<h3>
+                <h1 class="notes3">ANKITA GOYAL</h1>
+                <h3 class="notes4">A woman with 4yrs code experience</h3>
+               <p class="notes5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales, Phasellus
+               sodales,nibh ac nibh ac lacinia euismod, nibh eros nulla feugiat elit,id vestibulum 
+               ligula tellus a augue. Lorem Ipsum dolar consectetur adipiscing elit. Phasellus sod</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2 notes6">About Me</div>
+            <div class="col-md-5"></div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 fa fa-laptop fa-5x  data1"></div>
+            <div class="col-md-2 fa fa-mobile fa-5x  data2"></div>
+            <div class="col-md-2 fa-solid fa-person fa-5x data3"></div>
+            <div class="col-md-2 fa-solid fa-keyboard fa-5x data4"></div>
+            <div class="col-md-2 fa-solid fa-user fa-5x data5"></div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row name">
+            <div class="col-md-1"></div>
+    <div class="col-md-2">WEB DESIGN</div>
+    <div class="col-md-2">APP DEVELOPMENT</div>
+    <div class="col-md-2">TEAM LEADER</div>
+     <div class="col-md-2">CREATIVE DESIGN</div>
+    <div class="col-md-2">USER</div>
+    <div class="col-md-1"></div>
+    </div></div>
+
+    <div class="container-fluid">
+        <div class="row name1">
+            <div class="col-md-4 name2">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. ETIAM COMMODO URNA DOLOR,</div>
+            <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo urna dolor, eget lacinia est aliquam id. Proin velit libero, vestibulum ac orci eu, faucibus consectetur dolor. Cras ullamcorper elit eros, nec bibendum lacus accumsan eu. Donec non</div>
+            <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo urna dolor, eget lacinia est aliquam id. Proin velit libero, vestibulum ac orci eu, faucibus consectetur dolor. Cras ullamcorper elit eros, nec bibendum lacus accumsan eu. Donec non
+
+    </div>
+        </div>
+    </div>
+   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2 name3 bg-primary">More About Me</div>
+            <div class="col-md-5"></div>
+        </div>
+    </div> 
+    
+    <div class="name6"></div>
+    <div class="container-fluid">
+        <div class="row bg-primary">
+            <div class="col-md-5"></div>
+            <div class="col-md-2 name4">My Services</div>
+            <div class="col-md-5"></div>
+
+            <div class="file1">
+                <br> <i class="fa-solid fa-file fa-2x fa-data"></i><br><br>
+                 <b>WEB DESIGN </b><br>
+                 <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p></div>
+             
+                 <div class="file1">
+                     <br> <i class="fa-solid fa-pen fa-2x fa-data"></i><br><br>
+                 <b>HTML CODING </b> <br>
+                 <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p></div>
+             
+                      <div class="file1">
+                  <br><i class="fa-solid fa-thumbs-up fa-2x fa-data"></i> <br><br>
+                  <b>WEB DEVELOPMENT</b><br>
+                  <p class="notes"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p></div>
+             
+             
+                          <div class="file2">
+                  <br><br><br><br><i class="fa-brands fa-squarespace fa-2x fa-data"></i><br><br>
+                 <b> MOBILE APP DESIGN</b><br>
+                  <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p></div>
+             
+                 <div class="file2">
+                  <br><br><br><br><i class="fa-solid fa-building fa-2x fa-data"></i><br><br>
+                  <b>CREATIVE DESIGN</b><br>
+                  <p class="notes"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p></div>
+             
+             
+                      <div class="file2">
+                     <br><br><br><br><i class="fa-solid fa-file-import fa-2x fa-data"></i><br><br>
+                     <b> PHP DESIGN</b><br>
+                      <p class="notes">   Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p></div>
+             </div>
+
+             <br><br>
+<h1 font align="center" color="black" size="7px">Portfolio</h1><br>
+<div class="notes61">All  </div>
+<div class="notes7">Web Templates</div>
+<div class="notes7">Web Elements</div>
+<div class="notes7">App Design</div>
+<div class="notes7">Creative</div>
+<br><br>
+<div class="fix"></div>
+
+<div class="notes8 ">
+    <img class="img1" src="download1.jpg"  width="100%" height="100%">
+    <div class="child1">
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+    </div>
+</div>
+<div class="notes9"><img class="img2" src="download2.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div>
+<div class="notes10"><img class="img3" src="download3.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div>
+<div class="notes11"><img class="img4" src="download4.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div><br><br><br>
+<div class="notes12"><img class="img5" src="download5.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div>
+<div class="notes13"><img class="img6" src="download6.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div>
+<div class="notes14"><img class="img7" src="download7.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div>
+<div class="notes15"><img class="img8" src="download8.jpg"  width="100%" height="100%">
+    <div class="child1"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div></div>
+
+    <div class="fix"></div><br><br>
+    <div class="left-box">
+        <div class="notes16">
+            <i class="fa-brands fa-paypal fa-2x"></i><br>
+            Projects<br>
+            324
+        </div>
+        <div class="notes16">
+            <i class="fa-regular fa-heart fa-2x"></i> <br>
+            Happy Clients<br>200
+        </div>
+        <div class="notes16">
+            <i class="fa-solid fa-shield fa-2x"></i>
+            <br>Awards<br>35
+        </div>
+    </div>
+    <div class="right-box"></div>
+
+    <div class="fix"></div>
+<div class="notes17">Education And Work Experience</div>
+<div class="notes18">Education</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12 h5 title">2012-2016 &nbsp;  &nbsp;  &nbsp;  &nbsp;<font size ="4" color="cyan"> GRADUATION IN PROFESSIONAL
+            NATIONAL UNIVERSITY</font><i class="data6 fa-solid fa-caret-down"></i></div>
+        <div class="col-12 da1"><b>Projects & Awards</b><br>
+            Awards become corroded, friends gather no dust.<br>
+            Done a multi national project with clean & accesory design<br>
+            doloremque laudantium</div>
+    </div>
+    <div class="row">
+        <div class="col-12 h5 title1">2009-2010&nbsp;  &nbsp;  &nbsp;  &nbsp;<font size ="4" color="cyan"> DIPLOMA ADVERTISING AND
+            GRAPHIC DESIGN</font><i class="data7 fa-solid fa-caret-down"></i></div>
+        <div class="col-12 da2"><b>Seminars</b><br>
+            voluptatem accusantium<br>
+            accusantium doloremque<br>
+            doloremque laudantium</div>
+    </div>
+    <div class="row">
+        <div class="col-12 h5 title2">2007-2009 &nbsp;  &nbsp;  &nbsp;  &nbsp;<font size ="4" color="cyan">ACCESSORY DESIGNER 
+            IN UNIVERSITY OF CAMBRIDGE</font><i class="data8 fa-solid fa-caret-down"></i></div>
+        <div class="col-12 da3"><b>Competitions</b><br>
+            voluptatem accusantium<br>
+            accusantium doloremque<br>
+            doloremque laudantium</div>
+    </div>
+</div>
+
+<div class="notes22">Work Experience</div>
+<div class="row">
+    <div class="col-1" ></div>
+    <div class="col-3 notes23">2015 - Now<br>
+        Company Name</div>
+    <div class="col-7 notes24"><font size="5" color="cyan"> Senior Web Designer<br></font>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+         ut Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at</div>
+    <div class="col-1"></div>
+    <div class="col-1" ></div>
+    <div class="col-3 notes23">2011 - 2015<br>
+        Company Name</div>
+    <div class="col-7 notes24"><font size="5" color="cyan"> Web Designer & Developer<br></font>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+         ut Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at</div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-3 notes23">2009 - 2011<br>
+        Company Name</div>
+    <div class="col-7 notes24"><font size="5" color="cyan">Graphic Designer<br></font>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+         ut Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at</div>
+    <div class="col-1"></div>
+</div>
+       
+
+<div class="notes25">
+    <div class="child2">My Coding Skills</div>
+    <div class=" child3 notes26">40%</div>
+    <div class="child4 notes27"><b>ui/ux designer</b></div>
+    <div class=" child3 notes28">50%</div>
+    <div class="child4 notes29"><b>HTML</b></div>
+    <div class="child3 notes30">60%</div>
+    <div class="child4 notes31"><b>java script</b></div>
+    <div class="child3 notes32">70%</div>
+    <div class="child4 notes33"><b>web developer</b></div>
+</div>
+<div class="fix"></div>
+<div class="notes34"><b>Contact Me</b></div>
+<div class="notes35"><label for="name" ></label>
+<input type="text" id="name" placeholder="Name" ></div>
+<div class="notes36"><label for="sub" ></label>
+ <input type="text" id="sub"  placeholder="Subject" ></div>
+ <div class="notes36"><label for="email" ></label>
+     <input type="email" id="email"  placeholder="email"></div>
+<div class="notes36"><label for="phone" ></label>
+         <input type="number" id="phone"  placeholder="Phone"></div>
+         <div class="fix"></div>
+<div class="notes37"><label for="msg" ></label>
+<textarea id="msg"  placeholder="Message" cols="117" rows="5"></textarea></div>
+<div class="notes38"><input type="Submit" value="Submit"></div>
+
+<div class="notes39"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12770877.
+162950607!2d24.5239235051797!3d38.605403543878694!2m3!1f0!2f0!3f0!3m2!1i1024!
+2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2zVMO8cmtpeWU!5e0!3m2!
+1sen!2sin!4v1699965494033!5m2!1sen!2sin" width="1200" height="300" 
+style="border:0;" allowfullscreen="" loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<div class="fix"></div>
+<div class="notes40">
+<div class="notes41">&nbsp &nbspAddress<br>
+ 110 Atatürk Blvd, Kavaklıdere,<br> 06100 Ankara - Turkey.</div>
+ 
+<div class="notes41">&nbsp &nbspMail Me<br>
+ mail@example.com<br>
+ 
+ mail@example1.com</div>
+ 
+<div class="notes41">&nbsp &nbspPhone<br>
+ (0-312) 455 55 5555<br>
+ 
+ (0-312) 467 00 0019</div></div>
+
+ <div class="notes42">
+
+ <div class="notes43">Thanks For Visiting My Site</div>
+ <div class="notes44"><i class="fa fa-facebook"></i></div>
+    <div class="notes46"><i class="fa-brands fa-twitter"></i></div>
+    <div class="notes46"><i class="fa-brands fa-instagram"></i></div>
+    <div class="notes46"><i class="fa-solid fa-inbox"></i></div></div>
+   <div class="notes46"> <i class="fa-solid fa-bag-shopping"></i></div>
+ <div class="notes45">
+     © 2017 MY DATA. ALL RIGHTS RESERVED | DESIGN BY W3LAYOUTS</div>    </div>
+
+</body>
+<script>
+    $(document).ready(function(){
+       $(".title").click(function(){
+          $(".da1").slideToggle("slow");
+          $(".da2").hide("slow");
+          $(".da3").hide("slow");
+       })
+       $(".title1").click(function(){
+          $(".da2").slideToggle("slow");
+          $(".da1").hide("slow");
+          $(".da3").hide("slow");
+       })
+       $(".title2").click(function(){
+          $(".da3").slideToggle("slow");
+          $(".da2").hide("slow");
+          $(".da1").hide("slow");
+       })
+    });
+  </script>
+             
+</html>
